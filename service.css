@@ -1,0 +1,19 @@
+/* #card{
+display: flex;
+} */
+
+.serviceCard {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: dodgerblue;
+    padding: 10px;
+    gap: 10px;
+}
+.serviceCard > div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    height: 500px;
+}

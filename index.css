@@ -1,0 +1,248 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+body {
+    background-color: #fef7ef;
+}
+
+/* Container - Centers the content with max-width */
+.container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto; /* Centers the container */
+    padding: 0 20px; /* Adds spacing on smaller screens */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fef7ef;
+}
+
+header img {
+    width: 250px;
+    height: auto;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    font-size: 10px;
+    padding: 5px;
+}
+
+h2{
+    
+    font-size: 40px;
+}
+p{
+    
+    font-size: 20px;
+}
+span {
+    /* color:#a78057; */
+    color: #7e522f;
+    font-weight: bolder;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #dbb991;
+    margin: 0px 80px 20px 80px;
+    box-shadow: 0 10px 8px -8px #999;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+}
+
+.navlink {
+    padding: 8px;
+    text-decoration: none;
+    color: #a78057; /* Normal font color */
+    font-size: 20px;
+    font-family: cursive;
+}
+
+/* Hover effects */
+.navbar a:hover {
+    color: #7d3e08; /* Font color on hover */
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .8s ease;
+}
+
+li:hover:after {
+    width: 100%;
+    background: #7d3e08; /* Bottom bar on hover */
+}
+
+/* Content Section */
+#content {
+    display: flex;
+    width: 100%;
+    padding: 150px 20px 100px 20px;
+    height: fit-content;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('DogGrooming.png');    background-size: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    gap: 50px;
+    overflow-wrap: break-word;
+    color: #fff;
+}
+
+
+/* Secondary Navigation Buttons */
+.secondnav {
+    display: flex;
+    margin: 5px;
+    margin-top: 15px;
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+}
+
+.secondnav button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    width: 100px;
+    height: fit-content;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dbb991;
+}
+.secondnav button:hover{
+    font-size: 12px;
+    width: 100px;
+    height: fit-content;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a78057;
+    cursor: pointer;
+}
+
+
+/* US */
+#aboutus{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    background-color: #dbb991;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-wrap: break-word;
+
+}
+#aboutUsTitle{
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+#usInfo{
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+#usText{
+    display: flex;
+    width: 80%;
+}
+#usImg{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+#usImg img{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* bottom */
+.bottom{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 50px;
+    background-color: #a78057;
+
+}
+
+#miniInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 88px;
+    text-align: center;
+    color: #fff;
+}
+
+#miniInfo p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.socials{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.socials a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+}
+.socials a:hover{
+    text-decoration: none;
+    font-size: 30px;
+    color: #7e522f;
+}
